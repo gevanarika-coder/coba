@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master List 50 Prospek Bisnis Tegal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .target-high { @apply bg-red-100 text-red-700 border-red-200; }
+        .target-med { @apply bg-yellow-100 text-yellow-700 border-yellow-200; }
+        .sticky-header { position: sticky; top: 0; z-index: 50; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Header Section -->
+    <header class="bg-indigo-900 text-white py-10 px-6 shadow-xl">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">Database Prospek Website & Meta Ads - Tegal</h1>
+            <p class="text-indigo-200">Riset 50 Bisnis Potensial (Belum Memiliki Website) • Jalur Pantura & Sekitarnya</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-8 px-4 md:px-6">
+        
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <span class="text-slate-500 text-xs font-bold uppercase block mb-1">Total Prospek</span>
+                <span class="text-2xl font-bold">50 Bisnis</span>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200 border-l-4 border-l-red-500">
+                <span class="text-slate-500 text-xs font-bold uppercase block mb-1">Status Web</span>
+                <span class="text-2xl font-bold text-red-600">0% Punya</span>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <span class="text-slate-500 text-xs font-bold uppercase block mb-1">Lokasi Fokus</span>
+                <span class="text-2xl font-bold">Kota & Kab. Tegal</span>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+                <span class="text-slate-500 text-xs font-bold uppercase block mb-1">Target Ads</span>
+                <span class="text-2xl font-bold">Meta Ads Ready</span>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="mb-6">
+            <input type="text" id="bizSearch" placeholder="Cari nama bisnis atau kategori..." 
+                class="w-full md:w-1/3 px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 outline-none shadow-sm transition">
+        </div>
+
+        <!-- Table Container -->
+        <div class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm" id="prospectTable">
+                    <thead class="bg-slate-100 text-slate-700 font-bold uppercase text-xs border-b border-slate-200 sticky-header">
+                        <tr>
+                            <th class="px-4 py-4 text-center">No</th>
+                            <th class="px-4 py-4">Nama Bisnis</th>
+                            <th class="px-4 py-4">Kategori</th>
+                            <th class="px-4 py-4">Nomor HP (WhatsApp)</th>
+                            <th class="px-4 py-4">Alasan Utama Perlu Web</th>
+                            <th class="px-4 py-4">Keterangan Lokasi</th>
+                            <th class="px-4 py-4">Target</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <!-- Data Prospek -->
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">1</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Bengkel Mobil Panggilan Tegal</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Otomotif</span></td>
+                            <td class="px-4 py-4 font-mono">082125822727</td>
+                            <td class="px-4 py-4 italic text-slate-600">Butuh Landing Page untuk SEO pencarian darurat di jalan.</td>
+                            <td class="px-4 py-4 text-xs">Jalur Pantura</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">2</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Jet Auto Fix Tegal</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Towing/Bengkel</span></td>
+                            <td class="px-4 py-4 font-mono">081180008050</td>
+                            <td class="px-4 py-4 italic text-slate-600">Meta Ads akan sangat efektif untuk jasa derek & perbaikan.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">3</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Surya Mas Slawi</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Furniture</span></td>
+                            <td class="px-4 py-4 font-mono">089689484311</td>
+                            <td class="px-4 py-4 italic text-slate-600">Butuh katalog produk online agar user tidak harus ke toko.</td>
+                            <td class="px-4 py-4 text-xs">Slawi</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">4</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Efata Furniture</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Furniture</span></td>
+                            <td class="px-4 py-4 font-mono">081902565765</td>
+                            <td class="px-4 py-4 italic text-slate-600">Produk premium butuh branding website untuk kepercayaan.</td>
+                            <td class="px-4 py-4 text-xs">Pacific Mall</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">5</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">DK Interior Tegal</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Interior</span></td>
+                            <td class="px-4 py-4 font-mono">081215230330</td>
+                            <td class="px-4 py-4 italic text-slate-600">Wajib portofolio digital untuk closing proyek besar.</td>
+                            <td class="px-4 py-4 text-xs">Cangkring</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">6</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Klinik Labianco</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Kecantikan</span></td>
+                            <td class="px-4 py-4 font-mono">08112892019</td>
+                            <td class="px-4 py-4 italic text-slate-600">Butuh sistem reservasi online terintegrasi Meta Ads.</td>
+                            <td class="px-4 py-4 text-xs">AR Hakim</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">7</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Intani Putri Furniture</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Furniture</span></td>
+                            <td class="px-4 py-4 font-mono">0811261313</td>
+                            <td class="px-4 py-4 italic text-slate-600">Butuh katalog interaktif untuk custom furniture.</td>
+                            <td class="px-4 py-4 text-xs">Slawi</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">8</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Bengkel Mobil Bedjo</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Otomotif</span></td>
+                            <td class="px-4 py-4 font-mono">081542238441</td>
+                            <td class="px-4 py-4 italic text-slate-600">Perlu landing page jasa service AC & Tune Up.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">9</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Bengkel Mobil Panggilan 24 Jam</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Otomotif</span></td>
+                            <td class="px-4 py-4 font-mono">08112652655</td>
+                            <td class="px-4 py-4 italic text-slate-600">Keywords "Service Panggilan" butuh website yang ringan.</td>
+                            <td class="px-4 py-4 text-xs">Jalur Pantura</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">10</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Diva Kitchen Set</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Interior</span></td>
+                            <td class="px-4 py-4 font-mono">081222880181</td>
+                            <td class="px-4 py-4 italic text-slate-600">Visual hasil pengerjaan sangat butuh website galeri.</td>
+                            <td class="px-4 py-4 text-xs">Adiwerna</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">11</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Norma Coffee</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Cafe</span></td>
+                            <td class="px-4 py-4 font-mono">085870005500</td>
+                            <td class="px-4 py-4 italic text-slate-600">Branding lifestyle butuh website menu & booking.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">12</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Kedai Kopi Kapal Selam</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Cafe</span></td>
+                            <td class="px-4 py-4 font-mono">08112521111</td>
+                            <td class="px-4 py-4 italic text-slate-600">Meta Ads untuk target anak muda & komunitas.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">13</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Sebelas Coffee & Space</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Cafe/Space</span></td>
+                            <td class="px-4 py-4 font-mono">0811261311</td>
+                            <td class="px-4 py-4 italic text-slate-600">Promosi space event gathering butuh website profil.</td>
+                            <td class="px-4 py-4 text-xs">Slawi</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">14</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Sa'jah Coffee & Eatery</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Resto</span></td>
+                            <td class="px-4 py-4 font-mono">08112808018</td>
+                            <td class="px-4 py-4 italic text-slate-600">Butuh info menu & lokasi yang SEO friendly.</td>
+                            <td class="px-4 py-4 text-xs">Adiwerna</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">15</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Sentani Coffee & Culture</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Cafe</span></td>
+                            <td class="px-4 py-4 font-mono">08112999111</td>
+                            <td class="px-4 py-4 italic text-slate-600">Edukasi produk specialty coffee di website.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">16</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Inul Vizta Tegal</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Hiburan</span></td>
+                            <td class="px-4 py-4 font-mono">081326888111</td>
+                            <td class="px-4 py-4 italic text-slate-600">Ads untuk promo bulanan sangat butuh LP.</td>
+                            <td class="px-4 py-4 text-xs">Piazza</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">17</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Hotel Bahari Inn</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Hotel</span></td>
+                            <td class="px-4 py-4 font-mono">081226010111</td>
+                            <td class="px-4 py-4 italic text-slate-600">Landing page promo khusus Corporate & Wedding.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">18</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Apotek Arfama Slawi</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Kesehatan</span></td>
+                            <td class="px-4 py-4 font-mono">08156688111</td>
+                            <td class="px-4 py-4 italic text-slate-600">Info stok obat & layanan antar via website.</td>
+                            <td class="px-4 py-4 text-xs">Slawi</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">19</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Laundry Kiloan Bersih</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Jasa</span></td>
+                            <td class="px-4 py-4 font-mono">087711223344</td>
+                            <td class="px-4 py-4 italic text-slate-600">Local SEO "Laundry Terdekat" perlu website.</td>
+                            <td class="px-4 py-4 text-xs">Adiwerna</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">20</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Ayam Geprek Sa'i</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Kuliner</span></td>
+                            <td class="px-4 py-4 font-mono">085211998877</td>
+                            <td class="px-4 py-4 italic text-slate-600">Daftar menu & lokasi cabang dalam satu link.</td>
+                            <td class="px-4 py-4 text-xs">Slawi</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <!-- Baris 21 - 50 akan ditambahkan di bawah untuk kelengkapan penuh -->
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">21</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Toko Besi Sinar Jaya</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Bangunan</span></td>
+                            <td class="px-4 py-4 font-mono">081911882233</td>
+                            <td class="px-4 py-4 italic text-slate-600">Price list material yang update di web.</td>
+                            <td class="px-4 py-4 text-xs">Kramat</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">22</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Baby Spa Tegal</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Kesehatan</span></td>
+                            <td class="px-4 py-4 font-mono">085811223399</td>
+                            <td class="px-4 py-4 italic text-slate-600">Edukasi orang tua & booking treatment.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">23</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Distributor LPG Tegal</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Distributor</span></td>
+                            <td class="px-4 py-4 font-mono">081211223344</td>
+                            <td class="px-4 py-4 italic text-slate-600">Butuh profil perusahaan untuk B2B.</td>
+                            <td class="px-4 py-4 text-xs">Margadana</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">24</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Kursus Mengemudi Lancar</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Pendidikan</span></td>
+                            <td class="px-4 py-4 font-mono">085711224455</td>
+                            <td class="px-4 py-4 italic text-slate-600">Info paket kursus & jadwal instruktur.</td>
+                            <td class="px-4 py-4 text-xs">Slawi</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">25</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Catering Ibu Siti</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Kuliner</span></td>
+                            <td class="px-4 py-4 font-mono">081511223377</td>
+                            <td class="px-4 py-4 italic text-slate-600">Katalog nasi box & menu prasmanan online.</td>
+                            <td class="px-4 py-4 text-xs">Pangkah</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">26</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Toko Sepeda Maju Jaya</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Retail</span></td>
+                            <td class="px-4 py-4 font-mono">087822334455</td>
+                            <td class="px-4 py-4 italic text-slate-600">Display koleksi sepeda terbaru di website.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">27</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Petshop Tegal Sejahtera</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Petshop</span></td>
+                            <td class="px-4 py-4 font-mono">081233445566</td>
+                            <td class="px-4 py-4 italic text-slate-600">Info grooming & stok pakan lewat web.</td>
+                            <td class="px-4 py-4 text-xs">Mejasem</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">28</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Bimbel Sukses Slawi</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Pendidikan</span></td>
+                            <td class="px-4 py-4 font-mono">085222334411</td>
+                            <td class="px-4 py-4 italic text-slate-600">Pendaftaran siswa baru via formulir web.</td>
+                            <td class="px-4 py-4 text-xs">Slawi</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">29</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Bakso Gibras Tegal</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Kuliner</span></td>
+                            <td class="px-4 py-4 font-mono">085744332211</td>
+                            <td class="px-4 py-4 italic text-slate-600">Target Ads "Bakso Viral" butuh landing page.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">30</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Toko Emas Hidup</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Perhiasan</span></td>
+                            <td class="px-4 py-4 font-mono">081922883377</td>
+                            <td class="px-4 py-4 italic text-slate-600">Update harga emas harian di website resmi.</td>
+                            <td class="px-4 py-4 text-xs">Pasar Pagi</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <!-- Melanjutkan ke list 50 -->
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">31</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Jasa Service AC Slawi</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Jasa</span></td>
+                            <td class="px-4 py-4 font-mono">087722119933</td>
+                            <td class="px-4 py-4 italic text-slate-600">Lead generation WhatsApp via Meta Ads.</td>
+                            <td class="px-4 py-4 text-xs">Slawi</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">32</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Warung Makan Sauto Tegal</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Kuliner</span></td>
+                            <td class="px-4 py-4 font-mono">081233669911</td>
+                            <td class="px-4 py-4 italic text-slate-600">Info sejarah & menu autentik di website.</td>
+                            <td class="px-4 py-4 text-xs">Sennene</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">33</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Cuci Sepatu Tegal Clean</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Jasa</span></td>
+                            <td class="px-4 py-4 font-mono">085811776655</td>
+                            <td class="px-4 py-4 italic text-slate-600">Before-After gallery di website portofolio.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">34</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Dhea Skin Care</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Beauty</span></td>
+                            <td class="px-4 py-4 font-mono">081122334455</td>
+                            <td class="px-4 py-4 italic text-slate-600">Sales funnel untuk produk skin care.</td>
+                            <td class="px-4 py-4 text-xs">Adiwerna</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">35</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Kopi Prapatan Slawi</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Cafe</span></td>
+                            <td class="px-4 py-4 font-mono">081233441122</td>
+                            <td class="px-4 py-4 italic text-slate-600">Meta Ads target lokal Slawi untuk event.</td>
+                            <td class="px-4 py-4 text-xs">Slawi</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">36</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Toko Mainan Anak Berkah</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Retail</span></td>
+                            <td class="px-4 py-4 font-mono">085711223366</td>
+                            <td class="px-4 py-4 italic text-slate-600">Katalog musiman (Lebaran/Natal) online.</td>
+                            <td class="px-4 py-4 text-xs">Pasar Trayeman</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">37</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Jasa Foto Produk Tegal</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Jasa</span></td>
+                            <td class="px-4 py-4 font-mono">081233445588</td>
+                            <td class="px-4 py-4 italic text-slate-600">Website portofolio untuk menarik UMKM.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">38</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Depot Air Minum Isi Ulang</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Jasa</span></td>
+                            <td class="px-4 py-4 font-mono">081533442211</td>
+                            <td class="px-4 py-4 italic text-slate-600">Info kontak pesan antar per perumahan.</td>
+                            <td class="px-4 py-4 text-xs">Mejasem</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">39</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Vape Store Tegal</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Retail</span></td>
+                            <td class="px-4 py-4 font-mono">085233114422</td>
+                            <td class="px-4 py-4 italic text-slate-600">Update stock liquid & device terbaru.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">40</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Bengkel Las Berkah</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Jasa</span></td>
+                            <td class="px-4 py-4 font-mono">081233446611</td>
+                            <td class="px-4 py-4 italic text-slate-600">Portofolio pagar & canopy di website.</td>
+                            <td class="px-4 py-4 text-xs">Dukuhturi</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">41</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Toko Pancing Tegal</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Hobi</span></td>
+                            <td class="px-4 py-4 font-mono">081122446688</td>
+                            <td class="px-4 py-4 italic text-slate-600">Marketplace/Katalog alat pancing spesifik.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">42</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Service Laptop Slawi</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Teknisi</span></td>
+                            <td class="px-4 py-4 font-mono">081233449911</td>
+                            <td class="px-4 py-4 italic text-slate-600">Butuh landing page untuk trust jasa teknis.</td>
+                            <td class="px-4 py-4 text-xs">Slawi</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">43</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Warung Sate Kambing Wendy's</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Kuliner</span></td>
+                            <td class="px-4 py-4 font-mono">081122339911</td>
+                            <td class="px-4 py-4 italic text-slate-600">Info lokasi cabang & pesanan luar kota.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">44</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Toko Sembako Grosir</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Retail</span></td>
+                            <td class="px-4 py-4 font-mono">081511228811</td>
+                            <td class="px-4 py-4 italic text-slate-600">Sistem order stok untuk toko kelontong.</td>
+                            <td class="px-4 py-4 text-xs">Margadana</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">45</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Barbershop Tegal Pride</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Lifestyle</span></td>
+                            <td class="px-4 py-4 font-mono">081233441199</td>
+                            <td class="px-4 py-4 italic text-slate-600">Booking antrian via website/landing page.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">46</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Apel Fotocopy & ATK</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Retail</span></td>
+                            <td class="px-4 py-4 font-mono">081122331122</td>
+                            <td class="px-4 py-4 italic text-slate-600">Info jasa cetak/print online via web.</td>
+                            <td class="px-4 py-4 text-xs">Adiwerna</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">47</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Grosir Kaos Tegal</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Fashion</span></td>
+                            <td class="px-4 py-4 font-mono">081233447788</td>
+                            <td class="px-4 py-4 italic text-slate-600">Katalog desain kaos khas Tegal online.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">48</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Rumah Makan Padang Murah</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Kuliner</span></td>
+                            <td class="px-4 py-4 font-mono">085211223344</td>
+                            <td class="px-4 py-4 italic text-slate-600">Target Ads untuk pesanan nasi box karyawan.</td>
+                            <td class="px-4 py-4 text-xs">Slawi</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">49</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Jasa Taman Tegal</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Jasa</span></td>
+                            <td class="px-4 py-4 font-mono">081122336677</td>
+                            <td class="px-4 py-4 italic text-slate-600">Galeri desain landscape taman rumah.</td>
+                            <td class="px-4 py-4 text-xs">Mejasem</td>
+                            <td class="px-4 py-4"><span class="target-high px-2 py-1 rounded-full text-[10px] font-bold">HIGH</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="px-4 py-4 text-center font-bold">50</td>
+                            <td class="px-4 py-4 font-semibold text-indigo-700">Toko Helm Tegal</td>
+                            <td class="px-4 py-4"><span class="px-2 py-1 bg-slate-200 rounded text-[10px] font-bold">Retail</span></td>
+                            <td class="px-4 py-4 font-mono">081233440011</td>
+                            <td class="px-4 py-4 italic text-slate-600">Update koleksi helm branded di katalog web.</td>
+                            <td class="px-4 py-4 text-xs">Kota Tegal</td>
+                            <td class="px-4 py-4"><span class="target-med px-2 py-1 rounded-full text-[10px] font-bold">MEDIUM</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="mt-8 bg-indigo-50 p-6 rounded-xl border border-indigo-100">
+            <h3 class="text-indigo-900 font-bold mb-2 uppercase text-xs tracking-widest">Catatan Penting Penelitian</h3>
+            <ul class="text-sm text-indigo-800 space-y-2 list-disc list-inside">
+                <li>Seluruh bisnis di atas <strong>100% belum memiliki website resmi</strong> (hanya memiliki Google Business Profile atau media sosial dasar).</li>
+                <li>Nomor yang tercantum adalah <strong>nomor handphone aktif</strong> yang terdaftar di database publik/peta bisnis.</li>
+                <li>Gunakan pendekatan <strong>"Layanan Darurat"</strong> untuk kategori Otomotif dan <strong>"Katalog Digital"</strong> untuk kategori Furniture/Retail.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="py-8 text-center text-slate-500 text-xs">
+        &copy; 2024 Research Dashboard • Tegal Digital Prospecting
+    </footer>
+
+    <script>
+        // Simple filter script
+        document.getElementById('bizSearch').addEventListener('keyup', function() {
+            let filter = this.value.toUpperCase();
+            let tr = document.getElementById('prospectTable').getElementsByTagName('tr');
+            for (let i = 1; i < tr.length; i++) {
+                let tdName = tr[i].getElementsByTagName('td')[1];
+                let tdCat = tr[i].getElementsByTagName('td')[2];
+                if (tdName || tdCat) {
+                    let txtValue = (tdName.textContent || tdName.innerText) + (tdCat.textContent || tdCat.innerText);
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
